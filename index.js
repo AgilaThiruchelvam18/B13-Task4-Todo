@@ -131,7 +131,7 @@ async function fnReset() {
 
   document.getElementById("description").value = '';
   document.getElementById("amount").value = '';
-  document.getElementById("type").value = '';
+  // document.getElementById("type").value = '';
 
 }
 async function incomeData() {
