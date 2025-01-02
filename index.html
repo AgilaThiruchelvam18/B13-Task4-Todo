@@ -30,12 +30,12 @@
         </div>
         <div class="flex flex-col p-8">
             <form onsubmit="postData(); return false;">
-             <div class="flex gap-2">
+             <div class="w-full gap-2 grid grid-cols-1 md:grid-cols-3">
                 <input type=" text" id="description"
-                    class="flex-1 border border-gray py-2 mb-4 rounded-lg shadow-md px-4 " placeholder="Description" required>
-            <input type="number" id="amount" class=" flex-1  border-gray py-2 mb-4 rounded-lg shadow-md px-4"
+                    class=" border border-gray py-2 mb-4 rounded-lg shadow-md px-4 " placeholder="Description" required>
+            <input type="number" id="amount" class="border-gray py-2 mb-4 rounded-lg shadow-md px-4"
                     placeholder="Amount" required>
-                <select id="type" class="flex-1 w-52 py-2 mb-4 rounded-lg shadow-md fold-bold px-4 relative">
+                <select id="type" class=" max-w-56 py-2 mb-4 rounded-lg shadow-md fold-bold px-4 relative">
                     <option name="Income" value="Income" selected>Income</option>
                     <option name="Expense" value="Expense" >Expense</option>
                 </select>
