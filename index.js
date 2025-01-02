@@ -19,7 +19,7 @@ async function postData() {
     let description = document.getElementById("description").value;
     let amount = document.getElementById("amount").value;
     let type = document.getElementById("type").value;
-    if (update === 'false') {
+    if (update===false) {
       let entries = JSON.parse(localStorage.getItem('dataEntries')) || []; //JSON parse to convert string as array[object object]
       entries.push({
         description,
@@ -44,6 +44,7 @@ async function postData() {
         amount,
         type,
       };
+     
       await localStorage.setItem("dataEntries", JSON.stringify(entries)); //json stringify gives['a':'a']
       getData();
       calculation();
